@@ -116,55 +116,9 @@ The chart above shows the training data, actual test-set prices, and the model's
 
 ---
 
-## 📁 Project Structure
-
-```
-task-1-stock-price-prediction/
-├── Task 1.ipynb          # Main Jupyter Notebook (data prep, model, training, evaluation)
-├── images/                # Charts used in this README
-│   ├── closing_price.png
-│   ├── training_loss.png
-│   └── prediction_vs_actual.png
-├── .gitignore
-└── README.md
-```
-
----
-
-## ▶️ How to Run
-
-1. Clone the repository
-   ```bash
-   git clone https://github.com/Rishabh-Chavan/task-1-stock-price-prediction.git
-   cd task-1-stock-price-prediction
-   ```
-2. Install dependencies
-   ```bash
-   pip install yfinance pandas numpy tensorflow pandas_datareader scikit-learn matplotlib jupyter
-   ```
-3. Get TSLA historical data (via `yfinance` or download a CSV from [Yahoo Finance](https://finance.yahoo.com/quote/TSLA/history)) and place it in your working directory as `TSLA.csv`.
-4. Launch the notebook and run all cells
-   ```bash
-   jupyter notebook "Task 1.ipynb"
-   ```
-
----
-
-## 🚀 Future Improvements
-
-- Add more features beyond `Close` (e.g., `Volume`, technical indicators like RSI/MACD)
-- Use `MinMaxScaler` instead of `StandardScaler` for bounded LSTM inputs
-- Experiment with Bidirectional LSTM / GRU / Attention-based architectures
-- Hyperparameter tuning (sequence length, units, epochs, dropout)
-- Walk-forward validation instead of a single train/test split
-- Deploy as an interactive web app (e.g., Streamlit) for live ticker predictions
-
----
-
 ## 👤 Author
 
 **Rishabh Chavan**
-Data Science Intern @ Bharat Internship
 
 ---
 
