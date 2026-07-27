@@ -22,11 +22,6 @@ Stock prices are sequential, time-dependent data — making them a great fit for
 - **Feature used for prediction:** `Close` price only
 - **Split:** 80% training (1,007 records) / 20% testing (251 records)
 
-### Closing Price History
-<p align="center">
-  <img src="images/closing_price.png" alt="TSLA Closing Price History" width="700"/>
-</p>
-
 ---
 
 ## 🛠️ Tech Stack
@@ -85,17 +80,6 @@ _________________________________________________________________
 - **Epochs:** 10
 - **Batch size:** 32
 - **Input window:** 60 previous trading days
-
----
-
-## 📉 Training Loss
-
-The model's training loss dropped steadily across 10 epochs, from **0.1214** down to **0.0085**, indicating good convergence on the training data.
-
-<p align="center">
-  <img src="images/training_loss.png" alt="Training Loss Curve" width="600"/>
-</p>
-
 ---
 
 ## ✅ Results
@@ -106,13 +90,6 @@ The model's training loss dropped steadily across 10 epochs, from **0.1214** dow
 | **RMSE (actual price scale, $)** | **12.02** |
 
 An RMSE of ~$12 on a stock that traded roughly between $160–$260 during the test window reflects a reasonably close price-level fit, though the model — like most single-feature LSTM price predictors — tends to lag sharp reversals.
-
-### Predicted vs. Actual Closing Price
-<p align="center">
-  <img src="images/prediction_vs_actual.png" alt="Predicted vs Actual Closing Price" width="700"/>
-</p>
-
-The chart above shows the training data, actual test-set prices, and the model's predicted prices, illustrating how closely the LSTM tracks real market movement.
 
 ---
 
