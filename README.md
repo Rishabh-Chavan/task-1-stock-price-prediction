@@ -1,8 +1,6 @@
 # 📈 Task 1: Stock Price Prediction using LSTM
 
-A deep learning project that predicts **Tesla (TSLA) stock closing prices** using a Long Short-Term Memory (LSTM) neural network built with TensorFlow/Keras. This was completed as **Task 1** of the Data Science Internship at **Bharat Intern**.
-
----
+A deep learning project that predicts **Tesla (TSLA) stock closing prices** using a Long Short-Term Memory (LSTM) neural network built with TensorFlow/Keras. 
 
 ## 🧠 Overview
 
